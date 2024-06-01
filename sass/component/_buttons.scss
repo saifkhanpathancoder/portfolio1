@@ -1,0 +1,48 @@
+.cta {
+  display: flex;
+  align-items: center;
+  &__text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2rem;
+    border: none;
+    margin-right: 3rem;
+    background-color: $color-white;
+    cursor: pointer;
+  }
+  &__button {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: $color-primary;
+    border-radius: 4rem;
+    border: 1px solid $color-red-1;
+    padding: 1rem 4rem;
+    background-color: $color-white;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-red-1;
+      color: $color-white;
+    }
+  }
+}
+
+.cta-2 {
+  &__button {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    border: none;
+    background-color: $color-primary-dark;
+    padding: 1rem 5.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 0 2rem 2rem rgba($color-primary-light, 0.2);
+    }
+  }
+}

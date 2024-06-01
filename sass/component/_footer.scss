@@ -1,0 +1,189 @@
+.footer {
+  width: 100%;
+  padding-bottom: 14rem;
+  padding-top: 18rem;
+  background-color: #f8f8f8;
+  position: relative;
+
+  &__subscribe-innercontainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 114rem;
+    padding: 5rem 7rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    background-color: $color-white;
+    box-shadow: 0 2rem 3rem rgba($Color-black, 0.1);
+  }
+
+  &__heading-para {
+    width: 41rem;
+    height: 12rem;
+  }
+
+  &__head {
+    width: 37rem;
+    height: 8rem;
+    font-family: Rubik;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 4.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  &__para {
+    font-family: Rubik;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4f5665;
+  }
+
+  &__button {
+    color: $color-white;
+    font-family: Rubik;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 4rem;
+    background-color: $color-red;
+    cursor: pointer;
+    transition: all, 0.2s;
+    &:hover {
+      box-shadow: 0 2rem 2rem rgba($color-red, 0.2);
+    }
+  }
+
+  &__innercontainer {
+    max-width: 114rem;
+    margin: auto;
+    display: flex;
+  }
+
+  &__div-1 {
+    width: 34rem;
+    height: 24rem;
+    margin-right: 23rem;
+  }
+
+  &__text-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &__image-1 {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__span-1 {
+    font-family: Rubik;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    cursor: pointer;
+  }
+  &__span-2 {
+    @extend.footer__span-1;
+    font-weight: 700;
+  }
+  &__para-1 {
+    width: 34rem;
+    height: 6rem;
+    margin-bottom: 3rem;
+    color: #4f5665;
+  }
+
+  &__paragraph-1 {
+    font-family: Rubik;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: left;
+  }
+  &__icon {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2rem;
+
+    & svg {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &-icon {
+      position: relative;
+      &--overlay {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background-color: $color-red-1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 0;
+      }
+    }
+  }
+
+  &__text {
+    font-family: Rubik;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #afb5c0;
+  }
+  &__div-2 {
+    margin-right: 13rem;
+  }
+  &__product {
+    font-family: Rubik;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  &__download {
+    font-family: Rubik;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      text-decoration: underline 1px $Color-black;
+    }
+  }
+
+  &__download {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__div-3 {
+    width: 18rem;
+    height: 28rem;
+    margin-right: 10rem;
+  }
+  &__div-4 {
+    width: 20rem;
+    height: 12rem;
+  }
+}

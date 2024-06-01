@@ -1,0 +1,41 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //  // 1200px
+  }
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}
+$bp-vv: 35em; // 560px
+$bp-largest: 76.25em; // 1220px
+$bp-high: 64.37em; // 1030px
+$bp-larger: 71em;
+$bp-medium: 73.43em;
+$bp-mid: 70.12em; // 1122px
+$bp-highest: 74.37em; //1190px
+$bp-s: 67.5em; // 1080px
+$bp-l: 63.43em; // 1015px
+$bp-kid: 56.25em; //// 900px
+
+$bp-m: 71.18em; // 1139px
+$bp-vs: 31.25em; //
+
+$bp-vv: 35em; // 560px
+$bp-btw: 50.31em;
